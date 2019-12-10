@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
-
 <head>
-	<title>homework</title>
+	<title>PORTFOLIO</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
 
 	<style>
@@ -13,11 +12,12 @@
 
 		.content {
 			background: white;
-			width: 100%;
-			padding: 20px 20px 10px;
 			text-align: center;
-			border-style: solid;
 			margin: 1rem;
+            padding: 1rem 1rem 1rem 1rem;
+
+            /*object-fit:cover; 
+            width: 100%;*/
 		}
 
 		.navbar-brand {
@@ -34,6 +34,12 @@
 		td {
 			border: 1px solid black;
 		}
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
 	</style>
 
 	<script>
@@ -47,7 +53,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<!-- Brand/logo -->
-		<a class="navbar-brand" href="#">NCTU</a>
+		<a class="navbar-brand" href="#">PORTFOLIO</a>
 
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,12 +61,14 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
+            <!--
 				<li class="nav-item active">
 					<a class="nav-link" href="#">Browser<span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="#">Playlist</a>
 				</li>
+                -->
 			</ul>
 		</div>
 	</nav>
@@ -69,55 +77,11 @@
 		<div class="row">
 			<div class="col">
 				<div class="content">
-					鋼琴色按鈕(cooltext)
-					<a href="#" onclick="gosearch();" name=EnterSearch><img src="./tw/all.png" alt="完整版"></a>
+					<img src="./pic/1.png" alt="1">
 				</div>
-				<div class="content">
-					HTML Headings
-					<h1>This is example 1</h1>
-					<h2>This is example 2</h2>
-					<h3>This is example 3</h3>
+                <div class="content">
+					<img src="./pic/2.png" alt="2">
 				</div>
-				<div class="content">
-					href是Hypertext Reference的縮寫，意思是指定超鏈接目標的URL。
-					<a href="https://www.w3schools.com">This is a link</a>
-				</div>
-				<div class="content">
-					HTML table
-					<table style="width:100%">
-						<tr>
-							<th>name</th>
-							<th>score</th>
-						</tr>
-						<tr>
-							<td>學生1</td>
-							<td>100</td>
-						</tr>
-						<tr>
-							<td>學生2</td>
-							<td>100</td>
-						</tr>
-					</table>
-				</div>
-
-				<div class="content">
-					<div style="margin: 0% 45% 0% 45%;">
-						HTML List
-						<ul>
-							<li>item1</li>
-							<li>item2</li>
-							<li>item3</li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="content">
-					HTML Symbols
-					<p>I will display &euro;</p>
-				</div>
-	
-
-
 			</div>
 		</div>
 		<div id="root"></div>

@@ -3,7 +3,7 @@
 <head>
 	<title>PORTFOLIO</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 	<style>
 		body {
 			width: 100%;
@@ -14,6 +14,7 @@
 			background: white;
 			text-align: center;
 			margin: 1rem;
+			height: 600px;
             padding: 1rem 1rem 1rem 1rem;
 
             /*object-fit:cover; 
@@ -40,6 +41,29 @@
             height: 100%;
         }
 
+
+         .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
 	</style>
 
 	<script>
@@ -76,12 +100,32 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<div class="content">
-					<img src="./pic/1.png" alt="1">
-				</div>
+
                 <div class="content">
-					<img src="./pic/2.png" alt="2">
-				</div>
+                                <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./pic/1.png" alt="1"></div>
+      <div class="swiper-slide"><img src="./pic/2.png" alt="2"></div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>     
+                </div>
 			</div>
 		</div>
 		<div id="root"></div>
